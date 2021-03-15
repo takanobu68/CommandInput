@@ -4,7 +4,6 @@ const command = [];
 const konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 window.addEventListener("keydown", (e) => {
   command.push(e.keyCode);
-  console.log(command);
   if (command.length === 10) {
     if (command.toString() === konami.toString()) {
       quesBoard();
@@ -24,12 +23,6 @@ function quesBoard() {
 	`;
   body.appendChild(board);
 }
-
-btns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    console.log(true);
-  });
-});
 
 function re() {
   const test = document.querySelector(".test");
