@@ -3,16 +3,11 @@ const btns = document.querySelectorAll(".btn");
 const command = [];
 const konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 window.addEventListener("keydown", (e) => {
-  // e.key;
-  command.push(e.keyCode); // console.log("e.keyCode: ", e.keyCode);
-  // console.log("e.key: ", e.key);
+  command.push(e.keyCode);
   console.log(command);
   if (command.length === 10) {
     if (command.toString() === konami.toString()) {
-      // alert("成功");
       quesBoard();
-      // ここに下の要素を書き換える関数を作る
-      // 10megaサイトの応用
     } else {
       alert("不正解");
       command = [];
@@ -20,14 +15,8 @@ window.addEventListener("keydown", (e) => {
   }
 });
 
-// const test1 = [1];
-// const test2 = [1];
-
-// console.log(test1.toString() === test2.toString());
-
 function quesBoard() {
   const board = document.createElement("div");
-  // board.classList.add("test");
   board.innerHTML = `
 	<div class="test">
 		<button class="btn" onclick="re()">TEST</button>
