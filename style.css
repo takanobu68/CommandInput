@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  transition: all 0.5s;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg1 {
+  background-color: #f0f0f0;
+}
+.bg2 {
+  background-color: #d2d2d2;
+}
+.bg3 {
+  background-color: #b85858;
+}
+.test {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.btn {
+  padding: 50px;
+  font-size: 50px;
+  outline: 0;
+  background-color: yellow;
+}
